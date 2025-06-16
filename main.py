@@ -1,10 +1,9 @@
-meme_dict = {
-            "CRINGE": "Garip ya da utandırıcı bir şey",
-            "LOL": "Komik bir şeye verilen cevap",
-            }
-word = input("Anlamadığınız bir kelime yazın (hepsini büyük harflerle yazın!): ")
-
-if word in meme_dict.keys():
-    print(meme_dict[word])
-else:
-    print("aradığınız kelime sözlükte yok")
+import random
+uzunluk="+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+length = int(input("Lütfen şifrenizin uzunluğunu giriniz: "))
+sifre = ""
+for i in range(length):
+    sifre += random.choice(uzunluk)
+print("Oluşturulan şifre: ", sifre)
+# Bu kod, kullanıcıdan şifre uzunluğunu alır ve belirtilen uzunlukta rastgele bir şifre oluşturur.
+# Kullanıcıdan alınan uzunlukta rastgele karakterlerden oluşan bir şifre üretir.
